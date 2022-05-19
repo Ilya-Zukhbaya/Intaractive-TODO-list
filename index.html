@@ -13,9 +13,28 @@
         <h1 class="Interactive-header">Interactive <span class="main-span">ToDo </span>List</h1>
     </div>
 
-    <article class="ToDoList-container"></article>
+    <div class="main__page-container">
 
-    <article class="ToDoCompleted-container"></article>
+        <article class="ToDoList-container">
+            <form action="" method="get">
+                <label for="Get-Task-Text">Write your task here - </label>
+                <input type="text" placeholder="Your next task..." class="Get-Task-Text" id="Get-Task-Text">
+                <button type="submit" class="submit">Submit Task</button>
+            </form>
+            <ul class="ToDoSchedule">
+                <li class="ToDo-Task">Open Window <span class="completeText">Completed</span> <span class="removedText">Remove</span></li>
+                <li class="ToDo-Task">Close Window <span class="completeText">Completed</span> <span class="removedText">Remove</span></li>
+            </ul>
+        </article>
+
+        <article class="ToDoCompleted-container">
+            <ul class="CompletedTasks-list">
+                <li class="completedTask">Open Door</li>
+                <li class="completedTask">Close Door</li>
+            </ul>
+        </article>
+
+    </div>
 
     <script src="./main.js"></script>
 </body>
