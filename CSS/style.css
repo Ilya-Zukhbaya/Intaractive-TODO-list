@@ -1,5 +1,11 @@
 :root{
-    --backround-main: hsl(215, 51%, 70%)
+    --backround-main: hsl(215, 51%, 70%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --green-hover: hsl(178, 100%, 50%);
+    --main-text: hsl(217, 54%, 11%);
+    --purple-text: hsl(256, 55%, 45%);
+    --sec-text: hsl(216, 50%, 16%);
 }
 * {
     margin: 0;
@@ -11,3 +17,52 @@ body {
     font-family: 'Koulen','Arial', sans-serif;
     background-color: var(--backround-main);
 }
+
+ /* ========================================HEADER=============================================== */
+
+ .main__header-container{
+    width: 320px;
+    margin: 0 auto;
+    color: var(--main-text);
+    cursor: pointer;
+    transition: 3s;
+}
+
+.main__header-container:hover{
+    background: var(--line);
+    color: var(--white);
+}
+
+
+.Interactive-header{
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+    animation: typing 4s steps(15) forwards,
+    caret 1s steps(1) infinite;
+}
+@keyframes typing {
+    to{
+        width: 20ch;
+    }    
+}
+
+
+.main-span {
+    font-style: italic;
+    text-shadow: none;
+    font-size: 60px;
+    color: var(--sec-text);
+    animation: color 10s ease-in-out infinite;
+}
+@keyframes color {
+    0% {color: var(--backround-main);}
+    17% {color: var(--purple-text);}
+    34% {color: var(--backround-main);}
+    51% {color: var(--purple-text);}
+    68% {color: var(--backround-main);}
+    85% {color: var(--purple-text);}
+    100% {color: var(--backround-main);}
+}
+    
