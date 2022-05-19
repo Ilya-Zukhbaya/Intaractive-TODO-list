@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 320px;
+    width: 380px;
     margin: 0 auto;
     color: var(--main-text);
     cursor: pointer;
@@ -48,36 +48,41 @@ body {
         transform: translate3d(0, 80px, 0);
     }
 }
+
 .main__header-container:hover{
     background: var(--background-sec);
     color: var(--backround-main);
-    /* transform: translateY(50px); */
 }
 
 
 .Interactive-header{
-    width: 0;
-    white-space: nowrap;
     overflow: hidden;
-    border-right: 1px solid;
-    animation: typing 4s steps(15) forwards,
-    caret 1s steps(1) infinite;
-    animation-delay: 1.5s
+    border-right: 1px solid var(--line);  
+    white-space: nowrap;  
+    letter-spacing: 4px;
+    animation:  
+    typing 3.5s steps(30, end),
+    blink-caret .7s step-end infinite;
 }
+  
 @keyframes typing {
-    to{
-        width: 20ch;
-    }    
+    from { width: 0 }
+    to { width: 100% }
 }
-
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--main-text) }
+}
 
 .main-span {
     font-style: italic;
     text-shadow: none;
-    font-size: 60px;
+    font-size: 50px;
     color: var(--sec-text);
     animation: color 10s ease-in-out infinite;
 }
+
 @keyframes color {
     0% {color: var(--backround-main);}
     17% {color: var(--purple-text);}
