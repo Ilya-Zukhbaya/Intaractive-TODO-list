@@ -1,0 +1,13 @@
+:root{
+    --backround-main: hsl(215, 51%, 70%)
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Koulen','Arial', sans-serif;
+    background-color: var(--backround-main);
+}

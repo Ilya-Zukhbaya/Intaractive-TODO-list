@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Koulen';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: local('Koulen'),
+    url('../Fonts/Koulen-Regular.woff2') format('woff2'), 
+    url('../Fonts/Koulen-Regular.woff') format('woff');
+}
