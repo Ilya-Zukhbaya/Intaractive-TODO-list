@@ -3,11 +3,12 @@
     --line: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
     --sec-white: hsl(0, 0%, 83%);
-    --green-hover: hsl(178, 100%, 50%);
+    --green-hover: hsl(178, 97%, 38%);
     --main-text: hsl(217, 54%, 11%);
     --purple-text: hsl(256, 60%, 64%);
     --sec-text: hsl(216, 50%, 16%);
     --background-sec: hsl(215, 61%, 57%);
+    --red-text: hsl(335, 100%, 36%);
 }
 * {
     margin: 0;
@@ -93,6 +94,8 @@ body {
     85% {color: var(--purple-text);}
     100% {color: var(--backround-main);}
 }
+
+/* ===================================================== MAIN PAGE ========================================================== */
 .main__page-container{
     display: flex;
     justify-content: space-around;
@@ -103,6 +106,7 @@ body {
     flex-direction: column;
     border: 1px solid var(--line);
     padding: 20px;
+    width: 200px;
 }
 .ToDoSchedule-container{
     background-color: var(--background-sec);
@@ -114,4 +118,28 @@ body {
     background-color: var(--background-sec);
     padding: 20px;
     border: 1px solid var(--line);
+}
+.completeText{
+    margin-left: 30px;
+    color: var(--green-hover);
+}
+.removedText{
+    color: var(--red-text);
+    margin-left: 5px;
+}
+.completeText, .removedText{
+    font-size: 14px;
+}
+.completeText:hover, .removedText:hover{
+    background-color: var(--line);
+}
+
+/* ==================================================== FORM INPUT ==================================================  */
+
+.Get-Task-Text{
+    border: 3px solid --line;
+    margin-bottom: 10px;
+    height: 30px;
+    background-color: var(--sec-white);
+    border-radius: 4%;
 }
