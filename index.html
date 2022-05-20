@@ -16,18 +16,23 @@
     <div class="main__page-container">
 
         <article class="ToDoList-container">
-            <form action="" method="get">
-                <label for="Get-Task-Text">Write your task here - </label>
+            <form action="" method="get" class="ToDoForm-container">
+                <label for="Get-Task-Text">Write your task here: </label>
                 <input type="text" placeholder="Your next task..." class="Get-Task-Text" id="Get-Task-Text">
                 <button type="submit" class="submit">Submit Task</button>
             </form>
-            <ul class="ToDoSchedule">
-                <li class="ToDo-Task">Open Window <span class="completeText">Completed</span> <span class="removedText">Remove</span></li>
-                <li class="ToDo-Task">Close Window <span class="completeText">Completed</span> <span class="removedText">Remove</span></li>
-            </ul>
+
+            <div class="ToDoSchedule-container">
+                <h2 class="myTasks">My Tasks:</h2>
+                <ul class="ToDoSchedule">
+                    <li class="ToDo-Task">Open Window <span class="completeText">Completed</span> <span class="removedText">Remove</span></li>
+                    <li class="ToDo-Task">Close Window <span class="completeText">Completed</span> <span class="removedText">Remove</span></li>
+                </ul>
+            </div>
         </article>
 
         <article class="ToDoCompleted-container">
+            <h2 class="CompletedTasks-header">Completed Tasks:</h2>
             <ul class="CompletedTasks-list">
                 <li class="completedTask">Open Door</li>
                 <li class="completedTask">Close Door</li>

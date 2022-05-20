@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -92,4 +93,25 @@ body {
     85% {color: var(--purple-text);}
     100% {color: var(--backround-main);}
 }
-    
+.main__page-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+.ToDoForm-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+    padding: 20px;
+}
+.ToDoSchedule-container{
+    background-color: var(--background-sec);
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid var(--line);
+}
+.ToDoCompleted-container{
+    background-color: var(--background-sec);
+    padding: 20px;
+    border: 1px solid var(--line);
+}
