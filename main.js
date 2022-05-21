@@ -10,6 +10,7 @@ function formHandler(event) {
     const textInput = todoInput.value
 
     const newTask = document.createElement('li')
+    newTask.className = 'ToDo-Task'
 
     newTask.innerText = textInput
 
