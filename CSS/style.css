@@ -129,7 +129,10 @@ body {
     margin-left: 5px;
 }
 .completeText, .removedText{
+    font-family: 'Koulen', 'Arial', sans-serif;
     font-size: 14px;
+    background-color: var(--background-sec);
+    border: none;
 }
 .completeText:hover, .removedText:hover{
     background-color: var(--line);
