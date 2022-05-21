@@ -1,6 +1,7 @@
 const todoSchedule = document.querySelector('.ToDoSchedule')
 const todoForm = document.querySelector('.ToDoForm-container')
 const todoInput = document.querySelector('#Get-Task-Text')
+const completedTasks = document.querySelector('.CompletedTasks-list')
 
 todoForm.addEventListener('submit', formHandler)
 
@@ -16,6 +17,11 @@ function formHandler(event) {
 
     const addButton = document.createElement('button')
 
+    addButton.addEventListener('click', function(){
+        completedTasks.append(this.closest('li'))
+        addButton.remove()
+        deleteButton.remove()
+    })
     addButton.setAttribute('role', 'button')
     addButton.className = 'completeText'
     addButton.innerText = 'Completed'
@@ -25,7 +31,7 @@ function formHandler(event) {
     deleteButton.setAttribute('role', 'button')
     deleteButton.className = 'removedText'
     deleteButton.innerText = 'Remove'
-    deleteButton.addEventListener('click', deleteTask)
+    deleteButton.addEventListener('click', function() {this.closest('li').remove()})
 
     newTask.append(addButton)
     newTask.append(deleteButton)
@@ -33,8 +39,4 @@ function formHandler(event) {
 
     todoInput.value = null
     todoInput.focus()
-}
-
-function deleteTask() {
-    this.closest('li').remove();
 }
