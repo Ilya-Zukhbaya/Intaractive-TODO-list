@@ -10,8 +10,8 @@ function formHandler(event) {
     const textInput = todoInput.value
 
     const newTask = document.createElement('li')
+    
     newTask.className = 'ToDo-Task'
-
     newTask.innerText = textInput
 
     const addButton = document.createElement('button')
@@ -25,6 +25,7 @@ function formHandler(event) {
     deleteButton.setAttribute('role', 'button')
     deleteButton.className = 'removedText'
     deleteButton.innerText = 'Remove'
+    deleteButton.addEventListener('click', deleteTask)
 
     newTask.append(addButton)
     newTask.append(deleteButton)
@@ -32,4 +33,8 @@ function formHandler(event) {
 
     todoInput.value = null
     todoInput.focus()
+}
+
+function deleteTask() {
+    this.closest('li').remove();
 }
