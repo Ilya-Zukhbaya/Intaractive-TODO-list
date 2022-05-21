@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Koulen','Arial', sans-serif;
+    font-family: 'Koulen','Oswald', sans-serif;
     background-color: var(--backround-main);
 }
 
@@ -136,6 +136,10 @@ body {
 }
 .completeText:hover, .removedText:hover{
     background-color: var(--line);
+}
+
+.ToDo-Task{
+    text-transform: uppercase;
 }
 
 /* ==================================================== FORM INPUT ==================================================  */
