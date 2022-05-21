@@ -138,11 +138,11 @@ body {
 /* ==================================================== FORM INPUT ==================================================  */
 
 .Get-Task-Text{
-    border: 3px solid --line;
+    border: 2px solid var(--line);
     margin-bottom: 10px;
     height: 30px;
-    background-color: var(--sec-white);
-    border-radius: 4%;
+    background-color:#fff0f0;
+    border-radius: 2%;
 }
 .submit {
     font-family: 'Koulen', 'Arial', sans-serif;
